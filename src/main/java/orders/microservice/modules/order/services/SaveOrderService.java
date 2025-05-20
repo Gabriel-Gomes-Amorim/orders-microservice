@@ -17,7 +17,6 @@ public class SaveOrderService {
     private OrderRepository orderRepository;
 
   public void execute(OrderCreatedEventDTO event) {
-
         var entity = new OrderEntity();
 
         entity.setOrderId(event.codeOrder());
